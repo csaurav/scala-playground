@@ -2,15 +2,17 @@
 //
 
 object Test {
-  def main(args: Array[String]){
-    var x = 30;
-    var y = 20;
 
-    if ( x == 30 ) {
-      if ( y == 20  )
-      {
-        println("X = 30 and Y = 20")
-      }
-    }
+  def main(args: Array[String]){
+    println( "Returned value: " + addInt(5,12) );
+  }
+
+  // method 
+  //
+
+  def addInt(a:Int, b:Int) : Int = {
+    var sum:Int = 0;
+    sum = a + b
+    return sum;
   }
 }
